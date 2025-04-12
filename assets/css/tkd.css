@@ -1,0 +1,703 @@
+:root {
+  --primaryColor: #000;
+  --SecondaryColor: rgba(255, 0, 0, 0);
+  --textColor: #fff;
+  --hoverUnderlineColor: #1a8afe;
+}
+
+@font-face {
+  font-family: lobster;
+  src: url(../font/Lobster-Regular.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: lemonada;
+  src: url(../font/Lemonada-Medium.ttf);
+  font-weight: 500;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+  text-align: center;
+}
+
+/* ******************************* Navbar Section Start Here ******************************* */
+.navbar .navbar-brand {
+  height: 60px;
+  width: 60px;
+}
+
+.navbar .navbar-brand img {
+  width: 100%;
+}
+
+.navbar-nav li > a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--hoverUnderlineColor);
+  transition: width 0.3s;
+}
+.navbar-nav li > a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.nav-item .nav-link {
+  color: var(--textColor);
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+.login button {
+  padding: 2px 16px;
+  margin-right: 10px;
+  border-radius: 50px;
+  background: none;
+  color: #fff;
+  border: 1px solid red;
+  height: 40px;
+  width: 80px;
+}
+
+.register button {
+  padding: 2px 16px;
+  border-radius: 50px;
+  background: red;
+  color: #fff;
+  /* border: 1px solid red; */
+  height: 40px;
+  width: 100px;
+  line-height: 30px;
+}
+.btn-hover {
+  border: none;
+}
+
+.modal-content {
+  background: #1c1c1c;
+}
+
+/* ******************************* Navbar Section End Here ******************************* */
+
+/* ******************************* Banner Section Start Here ******************************* */
+
+.banner {
+  background: url("../image/slide-1.jpg");
+  height: 620px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 4s ease-in;
+}
+
+.carousel-slide .slide1 img, .slide2 img, .slide3 img{
+  height: 520px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+}
+
+.slide1 {
+  background-image: url("../image/slide-1.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+.slide2 {
+  background-image: url("../image/banner2.jpg");
+  background-repeat: no-repeat;
+}
+
+.slide3 {
+  background-image: url("./assets/image/kyuregi.jpg");
+} */
+
+img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  color: red;
+}
+
+.banner-head {
+  font-size: 46px;
+  color: red;
+  font-family: lemonada;
+}
+
+.banner-main {
+  font-size: 80px;
+  color: #1a8afe;
+  font-weight: bold;
+  font-family: lobster;
+}
+*/
+
+/* ******************************* Banner Section End Here ******************************* */
+
+/* ******************************* Detailed card Section Start Here *******************************  */
+
+.tkd-head {
+  font-size: 50px;
+  margin: 40px 0px;
+  font-family: lobster;
+}
+.event-head,
+.tkd-head {
+  font-size: 50px;
+  margin: 40px 0px;
+  font-family: lobster;
+}
+
+.card.breaking,
+.card.pumse,
+.card.kyuregi {
+  height: 320px;
+  opacity: 0.6;
+  border-radius: 8px;
+}
+
+.card.breaking img,
+.card.pumse img,
+.card.kyuregi img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.breaking-head,
+.pumse-head,
+.kyuregi-head {
+  top: -3%;
+  left: 24%;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+  font-family: lobster;
+}
+
+.card.breaking:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card.pumse:hover,
+.card.kyuregi:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* ******************************* Carousel News Section Start Here *******************************  */
+
+.card .card-image {
+  object-fit: cover;
+}
+.card .card-image img {
+  height: 285px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #000;
+}
+
+.card-footer p {
+  color: #fff;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  /* background:transparent ; */
+}
+
+/* .carousel-inner {
+  background-color: red;
+} */
+
+/* Dynamic Carosuel from code pen  start  */
+
+/* Dynamic Carosuel from code pen  End */
+
+/* ******************************* Footer section Start Here ******************************* */
+
+.footer .footer-logo {
+  height: 100px;
+  width: 100px;
+}
+
+.footer .footer-logo img {
+  width: 100%;
+}
+
+.social .insta,
+.facebbook,
+.youtubue {
+  height: 30px;
+  width: 30px;
+}
+
+.follow-us img {
+  width: 100%;
+}
+
+.follow-head,
+.footer-head h5 {
+  text-align: left;
+}
+
+.footer-text {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer-head ul li {
+  list-style: none;
+  text-align: left;
+  /* margin-left: 128px; */
+}
+
+.email-img,
+.location-img,
+.phone-img {
+  height: 30px;
+  width: 30px;
+}
+
+.location-area img {
+  width: 100%;
+}
+
+.location-text {
+  width: 50%;
+  text-align: left;
+}
+
+.email-text {
+  width: 50%;
+}
+
+.program {
+  text-align: left;
+  padding-left: 34px;
+}
+
+.phone-text span a,
+.email-text span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.register-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.register-modal .container {
+  width: 300px;
+}
+
+.register-modal h2 {
+  text-align: center;
+}
+
+.register-modal .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.register-modal label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.register-modal input {
+  width: 75%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button[type="button"] {
+  background-color: #dc3545;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.modal-content {
+  background: #1c1c1c;
+}
+
+/* ******************************* Instructor Page Start Here ******************************* */
+
+.team {
+  position: relative;
+}
+.team .item {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team .item:hover .img::after {
+  opacity: 1;
+}
+.team .item:hover .img .social-icons {
+  opacity: 1;
+  bottom: 15px;
+}
+.team .item .img {
+  position: relative;
+  overflow: hidden;
+  transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.team .item .img img {
+  width: 100%;
+  margin: 0;
+  transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+  background-size: cover;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.team .item:hover .img {
+  /*transform: scale(0.98);*/
+}
+.team .item .img::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.team .item .img .social-icons {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding: 0 20px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: 20;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.team .item .img .social-icons a {
+  font-size: 17px;
+  margin: 15px 1px;
+  line-height: 1;
+  color: #000;
+  padding: 12px 15px;
+  background-color: #FFF;
+  border-radius: 4px;
+}
+.team .item .img .social-icons a:hover {
+  color: #000;
+  opacity: 1;
+}
+.team .item .info {
+  padding: 30px 15px;
+
+}
+.team .item .info h5 {
+  font-size: 26px;
+  color: var(--theme-base-color);
+  margin-bottom: 5px;
+}
+.team .item .info p {
+ 
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+
+.team .item .info h5 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.team .item .info h5 a:hover {
+  color: var(--hoverUnderlineColor);
+}
+/* ******************************* Instructor Page End Here ******************************* */
+
+/* ******************************* Gallery Page Start Here ******************************* */
+.galleryscroll {
+  position: relative;
+  max-height: 900px;
+  /* overflow: scroll; */
+}
+.galleryscroll .item {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 0px;
+  isolation: isolate;
+}
+.galleryscroll .item .img {
+  position: relative;
+  overflow: hidden;
+  transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+  isolation: isolate;
+}
+.galleryscroll .item .img:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.galleryscroll .item .img > img {
+  transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.galleryscroll .item:hover .img > img {
+  -webkit-filter: none;
+  filter: none;
+  -webkit-transform: scale(1.03, 1.03);
+  transform: scale(1.03, 1.03);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* ******************************* Gallery Page End Here ******************************* */
+
+/* ******************************* About Us Page Start Here ******************************* */
+
+.about {
+  margin: 60px 0px;
+}
+
+.cont p {
+  text-align: left;
+}
+
+.cont.pl-50 button {
+  text-align: left;
+}
+
+.left-img img {
+  border-radius: 8px;
+}
+
+/* ******************************* About Us Page End Here ******************************* */
+
+/* ******************************* Contact Us Page Start Here ******************************* */
+.contact-head {
+  background: url("../image/Other-head.jpg");
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.6; */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text {
+  font-size: 70px;
+  color: #fff;
+}
+
+/* style.css */
+
+.contact-form {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: #f0f4f8; */
+  text-align: left;
+}
+
+.contact-form-section {
+  /* background: white; */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 550px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  /* border: 1px solid #ccc; */
+  background: #666666;
+  color: #fff;
+}
+.form-group ::placeholder {
+  color: #fff;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .contact-form-section {
+    margin: 1rem;
+  }
+}
+.timing {
+  margin: 60px 0px;
+}
+
+.timing .time-card,
+.phone-card,
+.add-card {
+  height: 300px;
+  /* width: 400px; */
+  background: #201d1d;
+  color: #fff;
+  margin: 20px 0px;
+}
+
+.card-circle {
+  width: 90px;
+  position: absolute;
+  left: 50%;
+  top: -16%;
+  transform: translate(-50%, 0%);
+}
+
+.card-body {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.add-address p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.call-number {
+  margin-top: 16px;
+}
+
+.call-number a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+.card-body h3 {
+  font-size: 26px;
+}
+
+.breadcrumb h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ******************************* Contact Us Page End Here ******************************* */

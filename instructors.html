@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taekwondo Association Navsari</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicon-32x32.png">
+    <link rel="icon" href="assets/image/favicon.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.all.min.css">
+    <link rel="stylesheet" href="assets/css/tkd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar Start Here -->
+
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <a class="navbar-brand" href="#"><img src="assets/image/logo.jpeg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instructors.html">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-button d-flex">
+                <div class="login">
+                    <button> Login </button>
+                </div>
+                <div class="register">
+                    <button data-bs-toggle="modal" data-bs-target="#register-btn"> Register </button>
+                </div>
+            </div>
+
+           <!-- Register Modal Start Here -->
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="register-btn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="register-btnLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <h1 class="modal-title fs-1" id="register-btnLabel">Register Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="registrationForm" method="POST" onsubmit="return validateForm()">
+
+                                <div class="form-group">
+                                    <!-- <label for="name">Name:</label> -->
+                                    <input type="text" id="name" name="name" placeholder="Enter Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="email">Email:</label> -->
+                                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="email">Email:</label> -->
+                                    <input type="number" id="number" name="phone" placeholder="Enter Number" required>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label for="message">Message:</label> -->
+                                    <textarea id="message" name="message" rows="4" placeholder="Enter Your Message"
+                                        required></textarea>
+                                </div>
+                                <div class="modal-footer border-0">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary border-0">Register</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Register Modal End Here -->
+
+        </nav>
+    </div>
+    <!-- Navigation Bar End Here -->
+
+
+
+    <section class="team section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="img"> 
+                            <img src="./assets/image/pumse.jpg" alt="" class="img-cover">
+                            <div class="social-icons">
+                                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                              
+                                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                                <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                            </div>
+                        </div>
+                        <div class="info bg-black">
+                            <h5><a href="#">John Doe</a></h5>
+                            <p>Coach</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="img"> <img src="./assets/image/pumse.jpg" alt="" class="img-cover">
+                            <div class="social-icons">
+                                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                                
+                                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                                <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                            </div>
+                        </div>
+                        <div class="info bg-black">
+                            <h5><a href="#">Barista</a></h5>
+                            <p>Coach</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="img"> <img src="./assets/image/pumse.jpg" alt="" class="img-cover">
+                            <div class="social-icons">
+                                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                                <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                            </div>
+                        </div>
+                        <div class="info bg-black">
+                            <h5><a href="#">Browni</a></h5>
+                            <p>Coach</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="img"> 
+                            <img src="./assets/image/pumse.jpg" alt="" class="img-cover">
+                            <div class="social-icons">
+                                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                               
+                                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                                <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                            </div>
+                        </div>
+                        <div class="info bg-black">
+                            <h5><a href="#">Megnam</a></h5>
+                            <p>Coach</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="img"> <img src="./assets/image/pumse.jpg" alt="" class="img-cover">
+                            <div class="social-icons">
+                                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                               
+                                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                                <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                            </div>
+                        </div>
+                        <div class="info bg-black">
+                            <h5><a href="#">Hitlesh</a></h5>
+                            <p>Coach</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="img"> <img src="./assets/image/pumse.jpg" alt="" class="img-cover">
+                            <div class="social-icons">
+                                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                                
+                                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                                <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                            </div>
+                        </div>
+                        <div class="info bg-black">
+                            <h5><a href="#">Michel</a></h5>
+                            <p>Coach</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section Started Here -->
+    <section id="footer">
+
+        <div class="container">
+            <div class="footer d-flex mt-5 pb-2">
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-logo d-flex">
+                        <img src="assets/image/logo.jpeg" alt="footer-logo">
+
+                        <div class="footer-text text-white d-flex align-items-center">
+                            TAEKWONDO ASSOCIATION NAVSARI
+                        </div>
+
+                    </div>
+
+                    <div class="follow-us">
+                        <div class="follow-head ">
+                            Folow us on
+                        </div>
+                        <div class="social d-flex mt-3">
+                            <div class="insta d-flex">
+                                <img src="./assets/image/instagram.png" alt="">
+                            </div>
+                            <div class="facebbook ms-2">
+                                <img src="./assets/image/facebook.png" alt="">
+                            </div>
+                            <div class="youtubue ms-2">
+                                <img src="./assets/image/youtube.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-head d-flex justify-content-start flex-column">
+                        <h5 class="program">PROGRAMS</h5>
+                        <ul>
+                            <li>Taekwondo</li>
+                            <li>Mental Disclipne</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="footer-head">
+                        <h5>CONTACT</h5>
+                        <div class="location-area ">
+
+                            <div class="email d-flex justify-content-start align-items-center mt-3">
+                                <div class="email-img">
+                                    <img src="./assets/image/email.png" alt="">
+                                </div>
+                                <div class="email-text ms-3 w-25">
+
+                                    <span>
+                                        <a href="mailto:taekwondoassociationnavsari@gmail.com">
+                                            taekwondoassociationnavsari@gmail.com </a>
+                                    </span>
+
+                                </div>
+                            </div>
+
+                            <div class="phone d-flex justify-content-start align-items-center mt-3">
+                                <div class="phone-img">
+                                    <img src="./assets/image/call.png" alt="">
+                                </div>
+                                <div class="phone-text ms-3">
+
+                                    <span>
+                                        <a href="tel:+917434083929"> +91 7434083929 </a>
+                                    </span>
+
+                                </div>
+                            </div>
+
+                            <div class="location d-flex justify-content-start align-items-center mt-3">
+                                <div class="location-img">
+                                    <img src="./assets/image/location.png" alt="">
+                                </div>
+                                <div class="location-text ms-3">
+
+                                    <span> Near Gohil Hospital, Dhudhiya Talav, Navsari - 39445</span>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer Section Started Here -->
+    <script src="assets/js/jquery.min.js"> </script>
+    <script src="assets/js/bootstrap-bundle.min.js"> </script>
+    <script src="assets/js/font-awesome.all.min.js"> </script>
+    <script src="assets/js/tkd.js"> </script>
+</body>
+
+</html>
