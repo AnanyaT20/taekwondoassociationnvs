@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.all.min.css">
     <link rel="stylesheet" href="assets/css/tkd.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -118,44 +119,76 @@
 
     <div class="gallery mt-5 mb-5">
         <div class="container">
-            <div class="row galleryscroll" data-masonry="{&quot;percentPosition&quot;: true }"
-                style="position: relative; height: 916.836px;">
-                <div class="col-lg-6 col-md-6 mb-25" style="position: absolute; left: 0%; top: 0px;">
-                    <div class="item">
-                        <a href="./assets/image/1.jpg" title="" class="gallery-masonry-item-img-link img-zoom">
-                            <div class="img"> <img src="./assets/image/1.jpg" class="img-fluid mx-auto d-block" alt="">
-                            </div>
-                        </a>
-                    </div>
+           
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                    <img src="./assets/image/tan-1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
                 </div>
-                <div class="col-lg-6 col-md-6 mb-25" style="position: absolute; left: 50%; top: 0px;">
-                    <div class="item">
-                        <a href="./assets/image/2.jpg" title="" class="gallery-masonry-item-img-link img-zoom">
-                            <div class="img"> <img src="./assets/image/2.jpg" class="img-fluid mx-auto d-block" alt="">
-                            </div>
-                        </a>
-                    </div>
+                <div class="column">
+                    <img src="./assets/image/tan-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
                 </div>
-                <div class="col-lg-6 col-md-6 mb-25" style="position: absolute; left: 0%; top: 305px;">
-                    <div class="item">
-                        <a href="./assets/image/3.jpg" title="" class="gallery-masonry-item-img-link img-zoom">
-                            <div class="img"> <img src="./assets/image/3.jpg" class="img-fluid mx-auto d-block" alt="">
-                            </div>
-                        </a>
-                    </div>
+                <div class="column">
+                    <img src="./assets/image/tan-3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
                 </div>
-
-                <div class="col-lg-6 col-md-6 mb-25" style="position: absolute; left: 50%; top: 305px;">
-                    <div class="item">
-                        <a href="./assets/image/4.jpg" title="" class="gallery-masonry-item-img-link img-zoom">
-                            <div class="img"> <img src="./assets/image/4.jpg" class="img-fluid mx-auto d-block" alt="">
-                            </div>
-                        </a>
-                    </div>
+                <div class="column">
+                    <img src="./assets/image/tan-4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
                 </div>
-
-
             </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+<!-- wide images  -->
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="./assets/image/tan-1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="./assets/image/tan-2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="./assets/image/tan-3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="./assets/image/tan-4.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="./assets/image/tan-1.jpg" onclick="currentSlide(1)" alt="Master">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="./assets/image/tan-2.jpg" onclick="currentSlide(2)" alt="Master">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="./assets/image/tan-3.jpg" onclick="currentSlide(3)" alt="Master">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="./assets/image/tan-4.jpg" onclick="currentSlide(4)" alt="Master">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -255,6 +288,23 @@
         </div>
 
     </section>
+
+
+    <a href="tel:+917434083929">
+        <button class="btn-floating phone">
+            <img src="https://i.imgur.com/FZuns9L.png" alt="Phone">
+            <span>+917434083929</span>
+        </button>
+    </a>
+
+    <a href="https://api.whatsapp.com/send?phone=7434083929" target="_blank">
+        <button class="btn-floating whatsapp">
+            <img src="https://i.imgur.com/LBW2Lso.png" alt="WhatsApp">
+            <span>+917434083929</span>
+        </button>
+    </a>
+
+
     <!-- Footer Section Started Here -->
 
     <script src="assets/js/jquery.min.js"> </script>
@@ -264,4 +314,3 @@
 </body>
 
 </html>
-
