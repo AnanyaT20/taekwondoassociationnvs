@@ -1,0 +1,236 @@
+/* Base styles (for desktops) are assumed already written */
+
+/* ========================================================================= 
+                        Desktop Size Responsive Code 
+========================================================================= */
+
+/* Medium Devices (Tablets - landscape) */
+@media (max-width: 991.98px) {
+  .banner-head-main {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .footer .footer-text {
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer .footer-logo img {
+    /* width: 60px; */
+    height: auto;
+  }
+
+  .nav-button {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Small Devices (Tablets - portrait) */
+@media (max-width: 767.98px) {
+  .banner-head {
+    font-size: 2.2rem;
+  }
+
+  .banner-main {
+    font-size: 5.5rem;
+  }
+
+.navbar-brand{
+    margin: 0px;
+}
+
+.nav-item .nav-link {
+    padding: 0px 0px;
+    font-size: 14px;
+}
+
+
+  .card-footer p {
+    font-size: 14px;
+  }
+
+  .footer .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer .footer-head ul {
+    padding-left: 0;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  .register button {
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+  .program {
+    text-align: left;
+    padding-left: 0px;
+  }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 575.98px) {
+  .navbar-brand img {
+    width: 50px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .register button {
+    font-size: 16px;
+    padding: 4px 4px;
+    /* margin-left: 168px; */
+  }
+
+  .banner-head-main {
+    text-align: center;
+    /* top: 50%;
+    transform: translateY(-50%); */
+  }
+
+  .banner-head {
+    font-size: 1rem;
+  }
+
+  .banner-main {
+    font-size: 1.2rem;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  
+
+  .footer .social img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .email-text,
+  .phone-text,
+  .location-text {
+    font-size: 13px;
+  }
+
+  .tkd-head,
+  .event-head {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+/* ========================================================================= 
+                        Instructure Page responsive code 
+========================================================================= */
+/* Team Section Styling */
+
+.team .img img.img-cover {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+}
+
+.team .social-icons {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.team .item:hover .social-icons {
+  opacity: 1;
+}
+
+.team .social-icons a {
+  color: #fff;
+  font-size: 16px;
+  background: #222;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.team .social-icons a:hover {
+  background-color: #f44336;
+}
+
+.team .info {
+  padding: 20px 10px;
+}
+
+.team .info h5 a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.team .info p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+@media (max-width: 576px) {
+  .team .info {
+    padding: 15px 5px;
+  }
+
+  .team .social-icons {
+    bottom: 5px;
+  }
+
+  .team .info h5 a {
+    font-size: 15px;
+  }
+
+  .team .info p {
+    font-size: 13px;
+  }
+}
+
+/* ========================================================================
+                    For Mobile Device Responsive Code  
+  ========================================================================*/
+  @media (max-width: 576px) {
+
+    button.navbar-toggler {
+        /* order: 2; */
+    }
+    .tkd-head, .event-head {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .banner-head {
+        font-size: 2.5rem;
+    }
+    .banner-main {
+        font-size: 5.2rem;
+    }
+
+  }
