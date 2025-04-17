@@ -103,47 +103,7 @@ body {
   align-items: center;
 }
 
-/* 
-.carousel {
-  position: relative;
-  width: 100%;
-  height: 520px;
-  overflow: hidden;
-}
-
-.carousel-slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 4s ease-in;
-}
-
-.carousel-slide .slide1 img, .slide2 img, .slide3 img{
-  height: 520px;
-  background-repeat: no-repeat;
-  width: 100%;
-  background-position: top;
-  background-size: cover;
-}
-
-.slide1 {
-  background-image: url("../image/slide-1.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 1;
-}
-
-.slide2 {
-  background-image: url("../image/banner2.jpg");
-  background-repeat: no-repeat;
-}
-
-.slide3 {
-  background-image: url("./assets/image/kyuregi.jpg");
-} */
-
-img {
+.banner img {
   width: 100%;
   height: auto;
 }
@@ -454,7 +414,7 @@ button:hover {
   line-height: 1;
   color: #000;
   padding: 12px 15px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 4px;
 }
 .team .item .img .social-icons a:hover {
@@ -463,7 +423,6 @@ button:hover {
 }
 .team .item .info {
   padding: 30px 15px;
-
 }
 .team .item .info h5 {
   font-size: 26px;
@@ -471,14 +430,12 @@ button:hover {
   margin-bottom: 5px;
 }
 .team .item .info p {
- 
   font-size: 17px;
   font-weight: 400;
   line-height: 30px;
   color: #fff;
   margin-bottom: 0px;
 }
-
 
 .team .item .info h5 a {
   text-decoration: none;
@@ -491,10 +448,10 @@ button:hover {
 /* ******************************* Instructor Page End Here ******************************* */
 
 /* ******************************* Gallery Page Start Here ******************************* */
-.galleryscroll {
+/* .galleryscroll {
   position: relative;
   max-height: 900px;
-  /* overflow: scroll; */
+  overflow: scroll;
 }
 .galleryscroll .item {
   overflow: hidden;
@@ -540,6 +497,140 @@ button:hover {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+} */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+  
+}
+
+.column img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* ******************************* Gallery Page End Here ******************************* */
@@ -560,6 +651,7 @@ button:hover {
 
 .left-img img {
   border-radius: 8px;
+  width: 100%;
 }
 
 /* ******************************* About Us Page End Here ******************************* */
@@ -701,3 +793,60 @@ button:hover {
 }
 
 /* ******************************* Contact Us Page End Here ******************************* */
+
+/* Floating Button CSS */
+
+.btn-floating:hover img {
+  margin-bottom: -3px;
+}
+
+.btn-floating {
+  position: fixed;
+  right: 25px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 0;
+  z-index: 9999;
+  color: white;
+  transition: 0.2s;
+}
+
+.btn-floating:hover {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.btn-floating span {
+  font-size: 16px;
+  margin-left: 5px;
+  transition: 0.2s;
+  line-height: 0px;
+  display: none;
+}
+
+.btn-floating:hover span {
+  display: inline-block;
+}
+
+/* Phone */
+.btn-floating.phone {
+  bottom: 85px;
+  background-color: #e6080c;
+}
+
+.btn-floating.phone:hover {
+  background-color: #c03421;
+}
+
+/* WhatsApp */
+.btn-floating.whatsapp {
+  background-color: #34af23;
+  bottom: 25px;
+}
+
+.btn-floating.whatsapp:hover {
+  background-color: #1f7a12;
+}
