@@ -132,3 +132,29 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+
+// Testimonail Section Js Start Here
+var swiper = new Swiper(".testimonial-wrapper", {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    loop: true,
+    speed: 1300,
+    autoplay: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      480: {
+        slidesPerView: 2,
+        slidesPerGroup: 1
+      }
+    }
+  });
+  
