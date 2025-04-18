@@ -448,57 +448,6 @@ button:hover {
 /* ******************************* Instructor Page End Here ******************************* */
 
 /* ******************************* Gallery Page Start Here ******************************* */
-/* .galleryscroll {
-  position: relative;
-  max-height: 900px;
-  overflow: scroll;
-}
-.galleryscroll .item {
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  border-radius: 0px;
-  isolation: isolate;
-}
-.galleryscroll .item .img {
-  position: relative;
-  overflow: hidden;
-  transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
-  isolation: isolate;
-}
-.galleryscroll .item .img:after {
-  content: " ";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  overflow: hidden;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.galleryscroll .item .img > img {
-  transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
-  border-radius: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.galleryscroll .item:hover .img > img {
-  -webkit-filter: none;
-  filter: none;
-  -webkit-transform: scale(1.03, 1.03);
-  transform: scale(1.03, 1.03);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-} */
-
 .row > .column {
   padding: 0 8px;
 }
@@ -793,6 +742,190 @@ button:hover {
 }
 
 /* ******************************* Contact Us Page End Here ******************************* */
+
+/* ******************************* Testimonial section start Here ******************************* */
+#testimonials .container {
+  width: 100%;
+  max-width: 1140px;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  color: #192a4e;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Cormorant Garamond";
+  font-weight: bold;
+  font-style: normal;
+  line-height: 48px;
+  position: relative;
+  margin-bottom: 52px;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 22px;
+  width: 45px;
+  height: 2px;
+  background-color: #d4b754;
+}
+.section-title::after {
+  left: unset;
+  right: 25%;
+}
+.testimonial-section {
+  padding-top: 82px;
+  padding-bottom: 72px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  border-radius: 40px;
+  padding: 30px 23px;
+  background: #192a4e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 15px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 15px)
+  );
+  background: #d9d9d9;
+  background: #504b4b;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, -4px);
+}
+
+.swiper-pagination-bullet-active {
+  background: #192a4e;
+}
+
+.swiper.testimonial-wrapper {
+  padding-top: 59px;
+  padding-bottom: 60px;
+}
+
+.testimonial-items .testimonial-text {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Outfit";
+  font-weight: normal;
+  font-style: normal;
+  max-width: 330px;
+  margin-bottom: 45px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+}
+
+.testimonial-items .testimonial-title {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Outfit";
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.testimonial-items .testimonial-title::before {
+  content: "";
+  position: absolute;
+  left: -23px;
+  top: 9px;
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.testimonial-img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  height: 70px;
+}
+
+.testimonial-img::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.testimonial-img.tm-img-1::before {
+  background-image: url(https://w7.pngwing.com/pngs/646/829/png-transparent-avatar-man-ico-icon-cartoon-little-boy-avatar-cartoon-character-png-material-child-thumbnail.png);
+}
+
+.testimonial-img.tm-img-2::before {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2IYhSn8Y9S9_HF3tVaYOepJBcrYcd809pBA&s);
+}
+
+.testimonial-img.tm-img-3::before {
+  background-image: url(https://png.pngtree.com/element_our/png/20181206/female-avatar-vector-icon-png_262142.jpg);
+}
+
+/* media query  */
+@media screen and (min-width: 768px) {
+  .swiper-pagination-bullet {
+    width: var(
+      --swiper-pagination-bullet-width,
+      var(--swiper-pagination-bullet-size, 24px)
+    );
+    height: var(
+      --swiper-pagination-bullet-height,
+      var(--swiper-pagination-bullet-size, 24px)
+    );
+  }
+  .section-title::before,
+  .section-title::after {
+    width: 141px;
+  }
+}
+/* ******************************* Testimonial section End Here ******************************* */
 
 /* Floating Button CSS */
 
